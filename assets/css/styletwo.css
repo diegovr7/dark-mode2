@@ -68,6 +68,10 @@ a:hover {
     min-height: 80px;
 }
 
+.nav-link {
+    color: var(--light-color);
+}
+
 #hero-bg {
     background-image: url('../images/hero.jpg');
     background-size: cover;
@@ -78,8 +82,12 @@ a:hover {
 .footer-content {
     position: absolute;
     width: 100%;
-    bottom: 10px;
+    bottom: 0;
     padding: 1rem 2rem;
+}
+
+.modal, .modal-content {
+    background-color: var(--dark-color); 
 }
 
 @media (max-width: 575.98px) { ... }
@@ -92,9 +100,6 @@ a:hover {
     }
     .navbar {
         position: relative;
-    }
-    .nav-link {
-        color: var(--dark-color);
     }
     .content {
         margin: 0 auto;
