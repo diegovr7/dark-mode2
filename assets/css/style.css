@@ -105,6 +105,7 @@ a:hover {
     }
     .hero-bg {
         background-image: none;
+        height: 400px;
     }
     .navbar {
         position: relative;
