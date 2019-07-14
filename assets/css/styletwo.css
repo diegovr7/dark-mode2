@@ -6,6 +6,7 @@
 }
 body {
     font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
     font-weight: 200;
     letter-spacing: .05rem;
 }
@@ -14,12 +15,20 @@ h1 {
     font-weight: 200;
 }
 
+.bg-light {
+    background-color: #ffffff !important;
+}
+
 .bg-light-grey {
     background-color: var(--light-grey-color);
 }
 
 .bg-grey {
     background-color: var(--dark-grey-color);
+}
+
+.bg-dark {
+    background-color: var(--dark-color) !important;
 }
 
 .display-2, .lead, small {
@@ -46,6 +55,23 @@ a:hover {
 
 .btn-primary:hover, .btn-primary:active {
     background-color: var(--dark-color);
+    opacity: .9;
+    border: 0px;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-secondary {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: .8rem 1.5rem;
+    border-radius: 0;
+}
+
+.btn-secondary:hover, .btn-secondary:active {
+    background-color: var(--light-color);
+    color: var(--dark-color);
     opacity: .9;
     border: 0px;
     text-decoration: none;
@@ -86,13 +112,19 @@ a:hover {
     padding: 1rem 2rem;
 }
 
+#portfolio, footer {
+    padding: 100px 0;
+}
+
 .modal, .modal-content {
     background-color: var(--dark-color); 
 }
 
-@media (max-width: 575.98px) { ... }
-
-@media (max-width: 767.98px) { ... }
+@media (max-width: 1199.98px) { 
+    .display-2 {
+        font-size: 4rem;
+    }
+}
 
 @media (max-width: 991.98px) { 
     #hero {
@@ -101,14 +133,24 @@ a:hover {
     .navbar {
         position: relative;
     }
+    .nav-link {
+        font-size: 3rem;
+    }
     .content {
         margin: 0 auto;
         padding: 4rem 3rem;
     }
 }
 
-@media (max-width: 1199.98px) { 
-    .display-2 {
-        font-size: 4rem;
+@media (max-width: 767.98px) { ... }
+
+@media (max-width: 575.98px) { 
+    .content {
+        padding: 4rem 1rem;
     }
 }
+
+
+
+
+
