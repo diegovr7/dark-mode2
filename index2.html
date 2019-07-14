@@ -9,11 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styletwo.css">
 
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-
     <title>Hello, world!</title>
 </head>
 
@@ -22,9 +21,9 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand font-weight-bold text-dark" href="#">Themes Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary d-block d-lg-none border-0 rounded-0" data-toggle="modal"
+                    data-target="#exampleModalCenter">
                     <i class="icon ion-md-menu"></i>
                 </button>
 
@@ -49,10 +48,10 @@
                 </div>
             </div>
         </nav>
-        <div class="row no-gutters h-100">
-            <div class="col-lg-6 col-md-12 d-flex">
-                <div class="container-fluid align-self-center">
-
+        <div class="row no-gutters">
+            <div class="col-lg-6 d-flex">
+                <div class="content align-self-center">
+                    <div class="container-fluid">
                     <h1 class="display-2 mb-4">Browse the web<br> <span class="font-weight-bold">in Dark Mode</span>
                     </h1>
                     <p class="lead mb-5">They emit low levels of light while maintaing a high standard of usability.
@@ -65,44 +64,75 @@
                             <span><i class="icon ion-md-arrow-forward"></i></span>
                         </div>
                     </a>
-                    <div class="hero-info">
-                        <div class="row d-flex">
-                            <div class="col-md-12 align-self-center">
-                                <small class="d-block">© Themes Bootstrap 2019. All Rights Reserved</small>
-                            </div>
+                    </div>
+                </div>
+                <div class="footer-content d-lg-block d-sm-none d-none">
+                    <div class="row no-gutters">
+                        <div class="col-md-12">
+                            <small>© Themes Bootstrap 2019. All Rights Reserved</small>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12">
-                <div class="hero">
-                    <div class="hero-info">
-                        <div class="container-fluid">
-                            <div class="row d-flex">
-                                <div class="col-md-6 align-self-center">
-                                    <a href="#" class="text-underline">Scroll down for more</a>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="list-inline lead text-right mb-0">
-                                        <li class="list-inline-item"><a href="#"><i
-                                                    class="icon ion-logo-dribbble"></i></a></li>
-                                        <li class="list-inline-item ml-3"><a href="#"><i
-                                                    class="icon ion-logo-instagram"></i></a></li>
-                                        <li class="list-inline-item ml-3"><a href="#"><i
-                                                    class="icon ion-logo-linkedin"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+            <div id="hero-bg" class="col-lg-6">
+                <div class="footer-content">
+                    <div class="row no-gutters">
+                        <div class="col-md-6 d-flex">
+                            <a href="#" class="text-underline align-self-center">Scroll down for more</a>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-inline lead text-right mb-0">
+                                <li class="list-inline-item"><a href="#"><i class="icon ion-logo-dribbble"></i></a></li>
+                                <li class="list-inline-item ml-3"><a href="#"><i
+                                            class="icon ion-logo-instagram"></i></a></li>
+                                <li class="list-inline-item ml-3"><a href="#"><i class="icon ion-logo-linkedin"></i></a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-light-grey py-5">
 
-    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-0 rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Works</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -18,6 +18,10 @@ h1 {
     background-color: var(--light-grey-color);
 }
 
+.bg-grey {
+    background-color: var(--dark-grey-color);
+}
+
 .display-2, .lead, small {
     font-weight: 200;
 }
@@ -40,19 +44,18 @@ a:hover {
     display: inline-block;
 }
 
+.btn-primary:hover, .btn-primary:active {
+    background-color: var(--dark-color);
+    opacity: .9;
+    border: 0px;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
 .btn-content {
     padding: 1.2rem 1.5rem;
     display: inline-block;
-}
-
-.btn-primary:hover {
-    background-color: var(--dark-color);
-    opacity: .9;
-    text-decoration: none;
-}
-
-.bg-grey {
-    background-color: var(--dark-grey-color);
 }
 
 .navbar {
@@ -65,34 +68,18 @@ a:hover {
     min-height: 80px;
 }
 
-.nav-link {
-    color: #ffffff;
-}
-
-#hero {
-    max-height: 700px;
-}
-
-.hero {
+#hero-bg {
     background-image: url('../images/hero.jpg');
     background-size: cover;
     position: relative;
     height: 700px;
 } 
 
-.hero-info {
-    position: absolute;
-    width: 100%;
-    padding: .5rem 1rem;
-    bottom: 10px;
-    min-height: 50px;
-}
-
-
 .footer-content {
     position: absolute;
+    width: 100%;
     bottom: 10px;
-    
+    padding: 1rem 2rem;
 }
 
 @media (max-width: 575.98px) { ... }
@@ -103,11 +90,15 @@ a:hover {
     #hero {
         max-height: unset;
     }
-    .hero-bg {
-        background-image: none;
-    }
     .navbar {
         position: relative;
+    }
+    .nav-link {
+        color: var(--dark-color);
+    }
+    .content {
+        margin: 0 auto;
+        padding: 4rem 3rem;
     }
 }
 
